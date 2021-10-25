@@ -5,7 +5,7 @@ fun main(){
 
     // var and val
 
-   // var age : Int = 39
+    var age : Int = 39
    // var candy : String
 
 
@@ -44,15 +44,50 @@ fun main(){
 
     // If statements and Booleans
 
-    
+    var isTheLightOn : Boolean = true
 
+    // if statement
 
+//    if (isTheLightOn) {
+//
+//        println("Walk across the room")
+//    } else {
+//
+//        println ("Don't move a muscle")
+//    }
+//
+//    var canRide : Boolean = age > 40
+//
+//        if (canRide) {
+//            println("Enjoy your night")
+//        } else {
+//            println("Sorry son...try another night ")
+//        }
 
+    // age >= 20 (means 20 or older the following argument means older than 20)
+//    if (age > 20) {
+//        println("Enjoy your night")
+//    } else {
+//        println("Sorry son...try another night ")
+//    }
 
+    // list and arrays
 
+    var topChocolate = listOf("Cadburys", "Double Decker", "Flake")
+//    var topChocolate : List<String> = listOf("Cadburys", "Double Decker", "Flake")
 
+    var topShows : Array<String> = arrayOf("Sopranos", "The Wire", "Rick & Morty")
+    topShows[2] = "Breaking Bad"
 
+    var newTopShows  = mutableListOf("Sopranos", "The Wire", "Breaking Bad")
+    newTopShows.add(2, "Rick & Morty")
+    newTopShows.remove("Breaking Bad")
+    newTopShows.add(3, "Loki")
 
+    println(topChocolate[1])
+    println(topShows[1])
+    println(newTopShows[2])
+    println(newTopShows[3])
 
 
 
