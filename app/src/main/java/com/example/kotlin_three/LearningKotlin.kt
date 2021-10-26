@@ -73,24 +73,39 @@ fun main(){
 
     // list and arrays
 
-    var topChocolate = listOf("Cadburys", "Double Decker", "Flake")
+//    var topChocolate = listOf("Cadburys", "Double Decker", "Flake")
 //    var topChocolate : List<String> = listOf("Cadburys", "Double Decker", "Flake")
 
-    var topShows : Array<String> = arrayOf("Sopranos", "The Wire", "Rick & Morty")
-    topShows[2] = "Breaking Bad"
+//    var topShows : Array<String> = arrayOf("Sopranos", "The Wire", "Rick & Morty")
+//    topShows[2] = "Breaking Bad"
 
     var newTopShows  = mutableListOf("Sopranos", "The Wire", "Breaking Bad")
     newTopShows.add(2, "Rick & Morty")
     newTopShows.remove("Breaking Bad")
     newTopShows.add(3, "Loki")
+//
+//    println(topChocolate[1])
+//    println(topShows[1])
+//    println(newTopShows[2])
+//    println(newTopShows[3])
 
-    println(topChocolate[1])
-    println(topShows[1])
-    println(newTopShows[2])
-    println(newTopShows[3])
+    for (x in 1..10){
+        println(x)
+    }
 
+    for (x in newTopShows){
+        println(x)
+    }
 
+    for (x in 0..newTopShows.size-1) {
+        newTopShows[x] = "##" + newTopShows[x] + "##"
+        println(newTopShows[x])
 
+    }
+
+    for (num in 1..1000) if (num > 453){
+        println(num)
+    }
 }
 
 
