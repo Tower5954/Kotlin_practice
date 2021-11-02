@@ -13,7 +13,7 @@ fun main(){
 
    // candy = "cadburys"
 
-    // maths in kotlin
+    // ------------------------------ maths in kotlin --------------------------------------------
 
    // var wallet : Int = 15 // starting wallet amount
 
@@ -42,7 +42,7 @@ fun main(){
     weight -= 5
     println(weight)
 
-    // If statements and Booleans
+    // ----------------------------- If statements and Booleans --------------------------------
 
     var isTheLightOn : Boolean = true
 
@@ -71,7 +71,7 @@ fun main(){
 //        println("Sorry son...try another night ")
 //    }
 
-    // list and arrays
+    // ----------------------- list and arrays---------------------------------------------
 
 //    var topChocolate = listOf("Cadburys", "Double Decker", "Flake")
 //    var topChocolate : List<String> = listOf("Cadburys", "Double Decker", "Flake")
@@ -89,23 +89,56 @@ fun main(){
 //    println(newTopShows[2])
 //    println(newTopShows[3])
 
-    for (x in 1..10){
-        println(x)
+//    for (x in 1..10){
+//        println(x)
+//    }
+//
+//    for (x in newTopShows){
+//        println(x)
+//    }
+//
+//    for (x in 0..newTopShows.size-1) {
+//        newTopShows[x] = "##" + newTopShows[x] + "##"
+//        println(newTopShows[x])
+//
+//    }
+//
+//    for (num in 1..1000) if (num > 453){
+//        println(num)
+//    }
+    // ---------------------------- Functions ----------------------------------------------
+    fun printHello(){
+        println("HELLO WORLD!")
+    }
+    printHello()
+
+
+//    fun addTwoNumbers(number1 : Int, number2 : Int){
+//        println(number1 + number2)
+//
+//    }
+
+
+    fun addTwoNumbers(number1 : Int, number2: Int ) : Int{
+        return number1 + number2
+
     }
 
-    for (x in newTopShows){
-        println(x)
+    var newNumber = addTwoNumbers(50, 9)
+
+    var newerNumber = addTwoNumbers(addTwoNumbers(15, 15), addTwoNumbers(20,9) )
+
+    println(newNumber)
+
+    println(newerNumber)
+
+
+    fun dogInfo(name:String, age:Int) : String{
+        return "Hello, this is " + name + ", I am " + age + " years old"
     }
 
-    for (x in 0..newTopShows.size-1) {
-        newTopShows[x] = "##" + newTopShows[x] + "##"
-        println(newTopShows[x])
-
-    }
-
-    for (num in 1..1000) if (num > 453){
-        println(num)
-    }
+    dogInfo("geoff", 32)
+    println(dogInfo("geoff", 32))
 }
 
 
