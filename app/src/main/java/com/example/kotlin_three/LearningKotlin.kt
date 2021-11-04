@@ -28,19 +28,19 @@ fun main(){
 
     //println(wallet)
 
-    var pi = 3.14159265358 // called a 'Double' not a Float
-    var radius = 5
-    
-    var circumference = pi * radius * 2
-    println(circumference)
-
-    var circum = pi.toInt() * radius * 2
-    println(circum)
-
-    var weight = 20
-
-    weight -= 5
-    println(weight)
+//    var pi = 3.14159265358 // called a 'Double' not a Float
+//    var radius = 5
+//
+//    var circumference = pi * radius * 2
+//    println(circumference)
+//
+//    var circum = pi.toInt() * radius * 2
+//    println(circum)
+//
+//    var weight = 20
+//
+//    weight -= 5
+//    println(weight)
 
     // ----------------------------- If statements and Booleans --------------------------------
 
@@ -79,10 +79,10 @@ fun main(){
 //    var topShows : Array<String> = arrayOf("Sopranos", "The Wire", "Rick & Morty")
 //    topShows[2] = "Breaking Bad"
 
-    var newTopShows  = mutableListOf("Sopranos", "The Wire", "Breaking Bad")
-    newTopShows.add(2, "Rick & Morty")
-    newTopShows.remove("Breaking Bad")
-    newTopShows.add(3, "Loki")
+//    var newTopShows  = mutableListOf("Sopranos", "The Wire", "Breaking Bad")
+//    newTopShows.add(2, "Rick & Morty")
+//    newTopShows.remove("Breaking Bad")
+//    newTopShows.add(3, "Loki")
 //
 //    println(topChocolate[1])
 //    println(topShows[1])
@@ -107,10 +107,10 @@ fun main(){
 //        println(num)
 //    }
     // ---------------------------- Functions ----------------------------------------------
-    fun printHello(){
-        println("HELLO WORLD!")
-    }
-    printHello()
+//    fun printHello(){
+//        println("HELLO WORLD!")
+//    }
+//    printHello()
 
 
 //    fun addTwoNumbers(number1 : Int, number2 : Int){
@@ -119,26 +119,64 @@ fun main(){
 //    }
 
 
-    fun addTwoNumbers(number1 : Int, number2: Int ) : Int{
-        return number1 + number2
+//    fun addTwoNumbers(number1 : Int, number2: Int ) : Int{
+//        return number1 + number2
+//
+//    }
+//
+//    var newNumber = addTwoNumbers(50, 9)
+//
+//    var newerNumber = addTwoNumbers(addTwoNumbers(15, 15), addTwoNumbers(20,9) )
+//
+//    println(newNumber)
+//
+//    println(newerNumber)
+//
+//
+//    fun dogInfo(name:String, age:Int) : String{
+//        return "Hello, this is " + name + ", I am " + age + " years old"
+//    }
+//
+//    dogInfo("geoff", 32)
+//    println(dogInfo("geoff", 32))
+
+
+    //-----------------------------Classes---------------------------------------#
+
+    class Dog() {
+        var name = ""
+        var age = 0
+        var furColour = ""
 
     }
 
-    var newNumber = addTwoNumbers(50, 9)
+    var myDog = Dog()
+    myDog.age = 42
+    myDog.name = "Geoff"
+    myDog.furColour = "Purple"
 
-    var newerNumber = addTwoNumbers(addTwoNumbers(15, 15), addTwoNumbers(20,9) )
+    class DogInfo() {
+        var name = ""
+        var age = 0
+        var furColour = ""
+        var temprament = ""
 
-    println(newNumber)
+        fun dogInfo(): String {
+            return name + " is " + age + " he has " + furColour + " fur and is " + temprament
+        }
 
-    println(newerNumber)
-
-
-    fun dogInfo(name:String, age:Int) : String{
-        return "Hello, this is " + name + ", I am " + age + " years old"
     }
 
-    dogInfo("geoff", 32)
-    println(dogInfo("geoff", 32))
+    var sale = DogInfo()
+    sale.name = "Dave"
+    sale.age = 38
+    sale.furColour = "white"
+    sale.temprament = "a little bit strange."
+
+
+    println(sale.dogInfo())
+
+
 }
 
 
